@@ -1,0 +1,46 @@
+.video-game {
+	padding: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.left-panel {
+	order: 0;
+	flex: 1;
+	align-self: auto;
+}
+
+.card-panel {
+	order: 0;
+	flex: 4;
+	align-self: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .video-game {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 668px) {
+  .video-game {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .video-game {   
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .video-game {   
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600");
+@import url("https://fonts.googleapis.com/css?family=Mulish:500e");
+
+body {
+	padding: 1rem;
+	background: linear-gradient(to bottom, #081220, #03080f);
+	color: #C1D1E8;
+	font-family: 'Mulish';
+}
+
+.card-panel-background {
+	background-color: #0E1A2B;
+}
+
+button, label, .header a {
+	color: #FFFFFF;
+	font-family: 'Montserrat';
+}
+
+label {
+	font-size: 0.8rem;
+}
+
+.accent, button {
+	background-color: #5692E8;
+}
+
+input, select, textarea {
+	background-color: #182C47;
+	border: none;
+	padding: 0.4rem;
+	outline: none;
+	font: inherit;
+	width: -webkit-fill-available;
+	color: currentColor;
+	outline: none;
+	scroll-behavior: smooth;
+}
+
+.form-element {
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.form-submit {
+	text-align: right;
+}
+
+.submit {
+	font-size: 0.9rem;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+}
+
+textarea {
+	min-height: 100px;
+}
+
+button {
+	border: 0;
+	line-height: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-auto {
+	flex: auto;
+}
+
+.ngx-pagination a, .ngx-pagination li, .ngx-pagination button {
+    color: #FFF !important;
+}
+
+@media screen and (min-width: 480px) {
+	.submit {
+		width: 100%;
+	}
+	body {
+		padding: 1rem;
+	}
+}
+
+@media screen and (min-width: 668px) {
+  	.submit {
+		width: auto;
+	}
+	body {
+		padding: 2rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+  	.submit {
+		width: auto;
+	}
+	body {
+		padding: 5rem;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+  	.submit {
+		width: auto;
+	}
+	body {
+		padding: 5rem;
+	}
+}

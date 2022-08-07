@@ -1,0 +1,49 @@
+.card-panel-background {
+	margin-right: 0rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+h4 {
+	margin: 0;
+	margin-bottom: 1.5rem;
+	font-size: 1.1rem;
+}
+
+.number-input {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.number-input:active {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+@media screen and (min-width: 480px) {
+	.card-panel-background {
+		margin-right: 0rem;
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (min-width: 668px) {
+	.card-panel-background {
+		margin-right: 0rem;
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.card-panel-background {
+		margin-right: 0.7rem;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.card-panel-background {
+		margin-right: 0.7rem;
+	}
+}

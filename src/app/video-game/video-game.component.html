@@ -1,0 +1,12 @@
+<div class="video-game" *ngIf="isLoaded">
+	<div class="left-panel">
+		<app-left-panel (filterList)=onGameListFilter($event)></app-left-panel>
+	</div>
+	<div class="card-panel">
+		<div *ngFor="let gameDetaile of gameList | paginate: { itemsPerPage: 10, currentPage: p }">
+			<app-game-card [gameDetail]="gameDetaile"></app-game-card>
+		</div>
+
+		<pagination-controls (pageChange)="p = $event"></pagination-controls>
+	</div>
+</div>

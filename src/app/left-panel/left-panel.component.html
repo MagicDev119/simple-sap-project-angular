@@ -1,0 +1,31 @@
+<div class="card-panel-background">
+	<h4>Filter Results</h4>
+	<div class="form">
+		<div class="form-child">
+			<label class="form-label">Name (contains) </label>
+			<div class="form-element">
+				<input type="text" name="" placeholder="Text string" [(ngModel)]="gameName" (input)="onClickFilter()">
+			</div>
+		</div>
+		<div class="form-child">
+			<label class="form-label">Minimum Score </label>
+			<div class="form-element">
+				<input class="number-input" type="number" name="" placeholder="1 - 10" [(ngModel)]="gameRating" (input)="onClickFilter()">
+			</div>
+		</div>
+		<div class="form-child">
+			<label class="form-label">Order By </label>
+			<div class="form-element flex">
+				<button (click)="onClickOrderBy()">{{ gameOrderDesc=="desc" ? "↑" : "↓" }}</button>
+				<select class="flex-auto" [(ngModel)]="gameOrderBy" (change)="onClickFilter()">
+					<option value="first_release_date">Release Date</option>
+					<option value="rating">Score</option>
+					<option value="name">Name</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-submit">
+			<button class="submit" (click)="onClickClear()">Clear</button>
+		</div>
+	</div>
+</div>

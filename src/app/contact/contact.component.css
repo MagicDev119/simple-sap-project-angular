@@ -1,0 +1,80 @@
+.contact-body{
+	width: 300px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+h2, h4 {
+	margin: 0;
+}
+
+h4 {
+	margin-bottom: 1.5rem;
+}
+
+p {
+	margin-top: 10px;
+	font-size: 0.9rem;
+	margin-bottom: 35px;
+}
+
+.card-panel-background {
+	padding: 20px;
+}
+
+.padding-right {
+	padding-right: 0px;
+}
+
+.padding-left {
+	padding-left: 0px;
+}
+
+.form-child {
+	flex-direction: column;
+}
+
+@media screen and (min-width: 480px) {
+	.contact-body{
+		width: 300px;
+		margin-top: 20px;
+	}
+	.form-child {
+		flex-direction: column;
+	}
+
+	.padding-right {
+		padding-right: 0px;
+	}
+
+	.padding-left {
+		padding-left: 0px;
+	}
+}
+
+@media screen and (min-width: 668px) {
+	.contact-body{
+		margin-top: 40px;
+		width: 500px;
+	}
+	.form-child {
+		flex-direction: row;
+	}
+	.padding-right {
+		padding-right: 15px;
+	}
+
+	.padding-left {
+		padding-left: 15px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.contact-body{
+		margin-top: 80px;
+		width: 600px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+}

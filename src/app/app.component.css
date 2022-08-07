@@ -1,0 +1,38 @@
+.header {
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+	position: relative;
+}
+
+.header a {
+	text-decoration: none;
+	display: inline-block;
+	white-space: nowrap;
+	padding-right: 3.5rem;
+	font-size: 1.7rem;
+}
+
+.header-span {
+	position: relative;
+}
+
+.header-span a.selected:after {
+    position: absolute;
+    color: rgb(187, 182, 182);
+    bottom: 1px;
+    left: -29px;
+    z-index: -1;
+    font-size: 2.8rem;
+    opacity: 0.1;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.video-span a.selected:after {
+    content: "VIDEO";
+}
+
+.contact-span a.selected:after {
+    content: "CONTACT";
+}
